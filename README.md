@@ -28,11 +28,11 @@ dnf config-manager --set-enabled crb	#to enbale powertools for libyaml-devel
 #Add as systemd service [Optional]
 
 - [ ] vim /etc/systemd/system/bugx.service
-
+```
 - [ ] [Unit]
-    - Description=Bugx-webapp
-    - Wants=network-online.target
-    - After=network-online.target
+      Description=Bugx-webapp
+      Wants=network-online.target
+      After=network-online.target
 
 - [ ] [Service]
     - User=root
