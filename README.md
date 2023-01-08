@@ -1,10 +1,10 @@
 # bugx_webapp
 
-# Perform commands as a root user
+#Perform commands as a root user
 
-# install build dependencies, build env and finally install ruby 
+- [ ] #install build dependencies, build env and finally install ruby 
 dnf config-manager --set-enabled crb	#to enbale powertools for libyaml-devel
-yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
+- [ ] yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
 cd ~
 git clone https://github.com/rbenv/rbenv.git
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
