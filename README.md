@@ -30,21 +30,21 @@ dnf config-manager --set-enabled crb	#to enbale powertools for libyaml-devel
 - [ ] vim /etc/systemd/system/bugx.service
 
 - [ ] [Unit]
-      Description=Bugx-webapp
-      Wants=network-online.target
-      After=network-online.target
+    - Description=Bugx-webapp
+    - Wants=network-online.target
+    - After=network-online.target
 
 - [ ] [Service]
-      User=root
-      Group=root
-      Type=simple
-      WorkingDirectory=/root/bugx_wepapp
-      ExecStart=/bin/sh -c "/root/.rbenv/shims/bundle exec jekyll serve --host 0.0.0.0"
+    - User=root
+    - Group=root
+    - Type=simple
+    - WorkingDirectory=/root/bugx_wepapp
+    - ExecStart=/bin/sh -c "/root/.rbenv/shims/bundle exec jekyll serve --host 0.0.0.0"
 
 - [ ] [Install]
-      WantedBy=multi-user.target
-      
+    - WantedBy=multi-user.target
 
-systemctl daemon-reload
-systemctl enable bugx
-systemctl restart bugx
+
+- systemctl daemon-reload
+- systemctl enable bugx
+- systemctl restart bugx
