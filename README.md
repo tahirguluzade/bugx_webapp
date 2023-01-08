@@ -49,6 +49,6 @@ WantedBy=multi-user.target
 - [ ] systemctl enable bugx
 - [ ] systemctl restart bugx
 
-If the all commands runned succesfully, you can check webapp:
+- [ ] If the all commands runned succesfully, you can check webapp:
 http://ipaddress:4000 # service as a default using port number 4000, so you need to open that port in your server
-if everything fine app would work !!!! :shipit:
+- if everything fine app would work !!!! :shipit:
